@@ -1,0 +1,35 @@
+.header {
+  background: $primary-header-background;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .icons {
+    cursor: pointer;
+
+    &:hover {
+      background: $primary-hover-background;
+      border-radius: 4px;
+    }
+  }
+
+  .left-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .focused-title {
+      font-size: 2.2rem;
+      cursor: pointer;
+    }
+  }
+
+  .right-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
