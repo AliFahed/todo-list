@@ -6,37 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focused</title>
     <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
-        <div class="left-header">
-          <img
-            src="/images/menu-icon.svg"
-            alt="menu-icon"
-            class="menu-icon icons"
-          />
-          <h1 class="focused-title">Focused</h1>
+    <div class="app-container">
+      <header class="header">
+        <div class="header-container">
+          <div class="left-header">
+            <img
+              src="/images/menu-icon.svg"
+              alt="menu-icon"
+              class="menu-icon icons"
+              onclick="openSlideMenu()"
+            />
+            <h1 class="focused-title">Focused</h1>
+          </div>
+          <div class="right-header">
+            <img
+              src="/images/plus-icon.svg"
+              alt="plus-icon"
+              class="plus-icon icons"
+            />
+            <img
+              src="/images/notification-icon.svg"
+              alt="notification-icon"
+              class="notification-icon icons"
+            />
+            <img
+              src="/images/account-icon.svg"
+              alt="account-icon"
+              class="account-icon icons"
+            />
+          </div>
         </div>
-        <div class="right-header">
+      </header>
+
+      <div class="menu-sidebar" id="menu-sidebar">
+        <div class="close-menu">
           <img
-            src="/images/plus-icon.svg"
-            alt="plus-icon"
-            class="plus-icon icons"
-          />
-          <img
-            src="/images/notification-icon.svg"
-            alt="notification-icon"
-            class="notification-icon icons"
-          />
-          <img
-            src="/images/account-icon.svg"
-            alt="account-icon"
-            class="account-icon icons"
+            src="/images/close-icon.svg"
+            alt="close-menu-icon"
+            class="close-icon icons"
+            onclick="closeSideMenu()"
           />
         </div>
+        <nav class="nav">
+          <ul class="default-nav">
+            <li class="inbox-nav nav-item">
+              <img
+                src="/images/inbox-icon.svg"
+                alt="inbox-icon"
+                class="inbox-icon icons"
+              />
+              <a href="#">Inbox</a>
+            </li>
+            <li class="today-nav nav-item">
+              <img
+                src="/images/calendar-today-icon.svg"
+                alt="today-icon"
+                class="today-icon icons"
+              />
+              <a href="#">Today</a>
+            </li>
+          </ul>
+
+          <ul class="custom-nav">
+            <li class="projects-nav">
+              <h2 class="projects-title">Projects</h2>
+              <img
+                src="/images/plus-icon.svg"
+                alt="menu plus icon"
+                class="menu-plus-icon icons"
+              />
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
+
+      <main class="main-content" id="main">
+        <h2 style="color: #000">Responsive Sidebar Menu</h2>
+      </main>
+    </div>
+    <script>
+      function openSlideMenu() {
+        document.getElementById('menu-sidebar').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+      }
+
+      function closeSideMenu() {
+        document.getElementById('menu-sidebar').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+      }
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
