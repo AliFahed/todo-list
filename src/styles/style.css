@@ -168,6 +168,22 @@
   background: #252525;
 }
 
+.add-task-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(124, 124, 124);
+}
+.add-task-container:hover {
+  cursor: pointer;
+  color: rgb(234, 31, 31);
+}
+.add-task-container:hover .icons {
+  background: rgb(234, 31, 31);
+  border-radius: 5px;
+}
+
 * {
   padding: 0;
   margin: 0;
