@@ -89,7 +89,38 @@
       </div>
 
       <main class="main-content" id="main">
-        <h2 style="color: #000">Responsive Sidebar Menu</h2>
+        <h2 class="page-title">Inbox</h2>
+        <div class="task-container">
+          <div class="tasks">
+            <div class="left-task-side">
+              <div class="task-priority">O</div>
+              <div class="task-title">Practice</div>
+            </div>
+            <div class="right-task-side">
+              <input type="date" class="task-due-date" name="task-due-date" />
+              <img
+                src="/images/close-icon.svg"
+                alt="close-task-icon"
+                class="remove-task icons"
+              />
+            </div>
+          </div>
+
+          <div class="tasks">
+            <div class="left-task-side">
+              <div class="task-priority">O</div>
+              <div class="task-title">Practice</div>
+            </div>
+            <div class="right-task-side">
+              <input type="date" class="task-due-date" name="task-due-date" />
+              <img
+                src="/images/close-icon.svg"
+                alt="close-task-icon"
+                class="remove-task icons"
+              />
+            </div>
+          </div>
+        </div>
       </main>
     </div>
     <script>
@@ -100,7 +131,8 @@
 
       function closeSideMenu() {
         document.getElementById('menu-sidebar').style.width = '0';
-        document.getElementById('main').style.marginLeft = '0';
+        document.getElementById('main').style.margin = '0 auto';
+        document.getElementById('main').classList.add('main-content');
       }
     </script>
     <script src="main.js"></script>

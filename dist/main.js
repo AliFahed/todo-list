@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("// const menuIcon = document.querySelector('.menu-icon');\r\n// menuIcon.addEventListener('click', () => {\r\n//   console.log('clicked menu');\r\n//   const menu_sidebar = document.querySelector('.menu-sidebar');\r\n// });\r\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
 
 /***/ })
 
