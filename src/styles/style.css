@@ -104,6 +104,70 @@
   border-radius: 4px;
 }
 
+.main-content {
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+}
+.tasks:hover {
+  cursor: pointer;
+  background: rgba(118, 118, 118, 0.4);
+  border-radius: 5px;
+}
+
+.left-task-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.left-task-side .task-priority {
+  font-size: 1.6rem;
+  /* if apply task priority */
+}
+.left-task-side .task-priority:hover {
+  color: green;
+  cursor: pointer;
+}
+.left-task-side .task-title {
+  font-size: 1.2rem;
+}
+
+.right-task-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.right-task-side .task-due-date {
+  padding: 5px;
+  border-radius: 5px;
+}
+.right-task-side .icons {
+  cursor: pointer;
+}
+.right-task-side .icons:hover {
+  background: #252525;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -115,7 +179,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
-  background: lightblue;
+  background: #252525;
 }
 
 .icons {

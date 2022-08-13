@@ -1,6 +1,7 @@
 @import './variables';
 @import './header';
 @import './menu-sidebar';
+@import './main';
 
 * {
   padding: 0;
@@ -14,7 +15,7 @@ body {
   line-height: 1.5;
   color: $primary-text-color;
   // overflow-x: hidden;
-  background: lightblue;
+  background: $primary-main-background;
 }
 
 .icons {
